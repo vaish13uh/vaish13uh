@@ -64,23 +64,15 @@
 
 <h3>github lately ✦</h3>
 
+<h3>github lately ✦</h3>
+
 <p>
-  learning in public, pushing projects and slowly making this little corner of the internet mine.
+  learning in public, pushing projects & slowly making this little corner of the internet mine ♡
 </p>
 
 <br>
 
-<img
-  src="https://github-readme-stats.vercel.app/api?username=vaish13uh&show_icons=true&hide_border=true&bg_color=00000000&title_color=d9b3ff&icon_color=f3a8cb&text_color=d8d0dc"
-  height="150"
-  alt="GitHub stats"
-/>
-
-<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaish13uh&layout=compact&hide_border=true&bg_color=00000000&title_color=d9b3ff&text_color=d8d0dc"
-  height="150"
-  alt="Top languages"
-/>
+✦ &nbsp; building &nbsp; • &nbsp; learning &nbsp; • &nbsp; experimenting &nbsp; ✦
 
 <br><br>
 
