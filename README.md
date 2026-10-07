@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="./assets/profile-sections.svg" width="100%" alt="a little glimpse into Vaishnavi">le glimpse into Vaishnavi">
+<img src="./assets/profile-sections.svg" width="100%" alt="a little glimpse into Vaishnavi">
 
 <br>
 
