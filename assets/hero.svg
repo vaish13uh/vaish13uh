@@ -1,0 +1,545 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- BACKGROUND -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="460">
+      <stop offset="0%" stop-color="#171321"/>
+      <stop offset="45%" stop-color="#292039"/>
+      <stop offset="75%" stop-color="#40304A"/>
+      <stop offset="100%" stop-color="#1B1527"/>
+    </linearGradient>
+
+    <!-- NAME -->
+    <linearGradient id="name" x1="200" y1="0" x2="650" y2="0">
+      <stop offset="0%" stop-color="#FFB7D8"/>
+      <stop offset="45%" stop-color="#E8B5FF"/>
+      <stop offset="100%" stop-color="#B9B1FF"/>
+    </linearGradient>
+
+    <!-- SOFT LIGHTS -->
+    <radialGradient id="pinkGlow">
+      <stop offset="0%" stop-color="#F59ACB" stop-opacity=".32"/>
+      <stop offset="100%" stop-color="#F59ACB" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="lavGlow">
+      <stop offset="0%" stop-color="#BCA9FF" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#BCA9FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="creamGlow">
+      <stop offset="0%" stop-color="#FFE6F1" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#FFE6F1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- BLUR -->
+    <filter id="blur40">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <filter id="blur18">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- CLIP -->
+    <clipPath id="round">
+      <rect x="8" y="8" width="1184" height="444" rx="30"/>
+    </clipPath>
+
+  </defs>
+
+
+  <!-- MAIN BACKGROUND -->
+  <rect width="1200" height="460" rx="34" fill="url(#bg)"/>
+
+
+  <!-- BREATHING GLOWS -->
+  <g filter="url(#blur40)">
+
+    <ellipse cx="185" cy="100" rx="220" ry="150" fill="url(#pinkGlow)">
+      <animate
+        attributeName="rx"
+        values="220;270;220"
+        dur="8s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values=".65;1;.65"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse cx="930" cy="110" rx="260" ry="180" fill="url(#lavGlow)">
+      <animate
+        attributeName="rx"
+        values="260;310;260"
+        dur="11s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values=".55;.9;.55"
+        dur="11s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse cx="650" cy="450" rx="280" ry="100" fill="url(#creamGlow)">
+      <animate
+        attributeName="ry"
+        values="100;135;100"
+        dur="9s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+  </g>
+
+
+  <!-- SOFT FLOATING BLOBS -->
+
+  <circle cx="1040" cy="330" r="80"
+          fill="#D6A7D8" opacity=".08"
+          filter="url(#blur18)">
+    <animate
+      attributeName="cy"
+      values="330;300;330"
+      dur="7s"
+      repeatCount="indefinite"/>
+    <animate
+      attributeName="r"
+      values="80;95;80"
+      dur="7s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="90" cy="390" r="55"
+          fill="#FFB2D5" opacity=".08"
+          filter="url(#blur18)">
+    <animate
+      attributeName="cy"
+      values="390;360;390"
+      dur="9s"
+      repeatCount="indefinite"/>
+  </circle>
+
+
+  <!-- MOVING ORGANIC CURVES -->
+
+  <g opacity=".28" filter="url(#glow)">
+
+    <path
+      d="M-80 390 C180 250 260 470 470 330 S790 190 1280 350"
+      stroke="#EAB5FF"
+      stroke-width="2"
+      fill="none"
+      stroke-dasharray="10 22">
+
+      <animate
+        attributeName="stroke-dashoffset"
+        from="0"
+        to="-160"
+        dur="8s"
+        repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".18;.45;.18"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </path>
+
+
+    <path
+      d="M-100 420 C150 290 320 450 510 350 S850 220 1300 310"
+      stroke="#FFB7D8"
+      stroke-width="1.5"
+      fill="none"
+      stroke-dasharray="4 28">
+
+      <animate
+        attributeName="stroke-dashoffset"
+        from="0"
+        to="180"
+        dur="12s"
+        repeatCount="indefinite"/>
+    </path>
+
+  </g>
+
+
+  <!-- LITTLE FLOATING PARTICLES -->
+
+  <g fill="#F6DDF0">
+
+    <circle cx="90" cy="75" r="2">
+      <animate attributeName="cy"
+        values="75;60;75"
+        dur="5s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values=".2;1;.2"
+        dur="3s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="150" cy="330" r="1.8">
+      <animate attributeName="cy"
+        values="330;305;330"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="800" cy="75" r="2">
+      <animate attributeName="cy"
+        values="75;95;75"
+        dur="7s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values=".2;1;.2"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1100" cy="120" r="1.5">
+      <animate attributeName="cy"
+        values="120;100;120"
+        dur="5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1030" cy="390" r="2">
+      <animate attributeName="cy"
+        values="390;365;390"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="710" cy="390" r="1.5">
+      <animate attributeName="cy"
+        values="390;370;390"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- TWINKLING STARS -->
+
+  <g fill="#FFDFF0" filter="url(#glow)">
+
+    <g transform="translate(1020 70)">
+      <path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 Z">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="0;45;0"
+          dur="5s"
+          repeatCount="indefinite"/>
+        <animate
+          attributeName="opacity"
+          values=".2;1;.2"
+          dur="3s"
+          repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g transform="translate(880 350)">
+      <path d="M0 -5 L1.5 -1.5 L5 0 L1.5 1.5 L0 5 L-1.5 1.5 L-5 0 L-1.5 -1.5 Z">
+        <animate
+          attributeName="opacity"
+          values=".15;1;.15"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g transform="translate(1130 270)">
+      <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z">
+        <animate
+          attributeName="opacity"
+          values=".2;1;.2"
+          dur="5.5s"
+          repeatCount="indefinite"/>
+      </path>
+    </g>
+
+  </g>
+
+
+  <!-- SMALL HEART -->
+
+  <g transform="translate(103 120)" fill="#FFB7D8" opacity=".7">
+    <path d="M0 7 C-16 -4 -9 -13 0 -7 C9 -13 16 -4 0 7Z">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0; 0 -10; 0 0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+
+  <!-- CONSTELLATION -->
+
+  <g stroke="#DDBEFF" stroke-width="1" opacity=".35">
+
+    <line x1="940" y1="170" x2="1000" y2="150"/>
+    <line x1="1000" y1="150" x2="1050" y2="190"/>
+    <line x1="1050" y1="190" x2="1100" y2="155"/>
+
+    <circle cx="940" cy="170" r="3" fill="#EBCBFF"/>
+    <circle cx="1000" cy="150" r="2" fill="#EBCBFF"/>
+    <circle cx="1050" cy="190" r="3" fill="#EBCBFF"/>
+    <circle cx="1100" cy="155" r="2" fill="#EBCBFF"/>
+
+    <circle cx="1000" cy="150" r="7" fill="none">
+      <animate
+        attributeName="r"
+        values="5;11;5"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values=".1;.6;.1"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- TEXT -->
+
+  <g font-family="Inter, Arial, sans-serif">
+
+    <!-- small intro -->
+
+    <text
+      x="92"
+      y="150"
+      fill="#EADDED"
+      font-size="20"
+      letter-spacing="2"
+      opacity="0">
+
+      Hi, I'm
+
+      <animate
+        attributeName="opacity"
+        from="0"
+        to=".9"
+        dur="1.2s"
+        fill="freeze"/>
+
+      <animate
+        attributeName="y"
+        from="165"
+        to="150"
+        dur="1.2s"
+        fill="freeze"/>
+    </text>
+
+
+    <!-- NAME -->
+
+    <text
+      x="88"
+      y="215"
+      fill="url(#name)"
+      font-size="64"
+      font-weight="700"
+      letter-spacing="-2"
+      filter="url(#glow)"
+      opacity="0">
+
+      Vaishnavi.
+
+      <animate
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="1.4s"
+        begin=".4s"
+        fill="freeze"/>
+
+      <animate
+        attributeName="y"
+        from="235"
+        to="215"
+        dur="1.4s"
+        begin=".4s"
+        fill="freeze"/>
+    </text>
+
+
+    <!-- MAIN GEN Z LINE -->
+
+    <text
+      x="92"
+      y="267"
+      fill="#F4EAF4"
+      font-size="17"
+      letter-spacing=".2"
+      opacity="0">
+
+      somewhere between “i have an idea” and
+
+      <animate
+        attributeName="opacity"
+        from="0"
+        to=".9"
+        dur="1.2s"
+        begin="1s"
+        fill="freeze"/>
+    </text>
+
+    <text
+      x="92"
+      y="292"
+      fill="#F4EAF4"
+      font-size="17"
+      letter-spacing=".2"
+      opacity="0">
+
+      “why isn't this working?” ♡
+
+      <animate
+        attributeName="opacity"
+        from="0"
+        to=".9"
+        dur="1.2s"
+        begin="1.25s"
+        fill="freeze"/>
+    </text>
+
+
+    <!-- SKILLS -->
+
+    <g opacity="0">
+
+      <animate
+        attributeName="opacity"
+        from="0"
+        to=".9"
+        dur="1s"
+        begin="1.7s"
+        fill="freeze"/>
+
+      <!-- PYTHON -->
+
+      <rect x="92" y="330" width="90" height="32"
+            rx="16"
+            fill="#E8C8E8"
+            fill-opacity=".09"
+            stroke="#E9B8D7"
+            stroke-opacity=".3"/>
+
+      <text x="137" y="351"
+            text-anchor="middle"
+            fill="#F6DCEB"
+            font-size="11"
+            letter-spacing="1.5">
+        PYTHON
+      </text>
+
+
+      <!-- AI -->
+
+      <rect x="192" y="330" width="92" height="32"
+            rx="16"
+            fill="#D5C5FF"
+            fill-opacity=".09"
+            stroke="#C9B7FF"
+            stroke-opacity=".3"/>
+
+      <text x="238" y="351"
+            text-anchor="middle"
+            fill="#E9DFFF"
+            font-size="11"
+            letter-spacing="1.5">
+        AI / ML
+      </text>
+
+
+      <!-- SQL -->
+
+      <rect x="294" y="330" width="75" height="32"
+            rx="16"
+            fill="#F2B9D7"
+            fill-opacity=".09"
+            stroke="#F2B9D7"
+            stroke-opacity=".3"/>
+
+      <text x="331" y="351"
+            text-anchor="middle"
+            fill="#F6DCEB"
+            font-size="11"
+            letter-spacing="1.5">
+        SQL
+      </text>
+
+    </g>
+
+  </g>
+
+
+  <!-- RIGHT-SIDE FLOATING DECOR -->
+
+  <g opacity=".65">
+
+    <circle cx="1060" cy="340" r="5"
+            fill="#E6B8E7">
+      <animate
+        attributeName="cy"
+        values="340;315;340"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1090" cy="370" r="2"
+            fill="#FFD6E9">
+      <animate
+        attributeName="cy"
+        values="370;350;370"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1025" cy="365" r="3"
+            fill="#C8B9FF">
+      <animate
+        attributeName="cy"
+        values="365;345;365"
+        dur="5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- BORDER -->
+
+  <rect
+    x="8"
+    y="8"
+    width="1184"
+    height="444"
+    rx="30"
+    fill="none"
+    stroke="#E8CFE9"
+    stroke-opacity=".13"/>
+
+
+  
+
+</svg>
