@@ -2,14 +2,6 @@
 
 <img src="./assets/hero.svg" width="100%" alt="Vaishnavi">
 
-<br><br>
-
-<i>somewhere between “i have an idea” and “why isn't this working?” ♡</i>
-
-<br><br>
-
-━━━━━━━━━━━━━━━━━━━━ ✦ ━━━━━━━━━━━━━━━━━━━━
-
 <h3>whoami ✦</h3>
 
 <p>
