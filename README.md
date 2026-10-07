@@ -6,7 +6,7 @@
 
 <br>
 
-<h3 align="center">a little about me ✦</h3>
+<h3 align="center">✦ a little about me ✦</h3>
 
 <p align="center">
   building with <b>Python</b>, <b>AI/ML</b> & <b>SQL</b><br>
