@@ -4,8 +4,21 @@
 
 <br><br>
 
-### Python · AI/ML · SQL · Backend
+<h3 align="center">things i've built ✦</h3>
+<br>
 
-Building things I find interesting.
+<h3 align="center">things i've built ✦</h3>
+
+<p align="center">
+  <a href="https://github.com/vaish13uh/MIRA">⛏️ MIRA</a>
+  &nbsp; • &nbsp;
+  <a href="https://github.com/vaish13uh/AutoHedger">🤖 AutoHedger</a>
+  &nbsp; • &nbsp;
+  <a href="https://github.com/vaish13uh/sentiment-analysis">💭 Sentiment Analysis</a>
+</p>
+
+<p align="center">
+  <i>a few things i've built, broken, fixed & learned from ♡</i>
+</p>
 
 </div>
