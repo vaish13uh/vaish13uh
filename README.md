@@ -4,21 +4,23 @@
 
 <br><br>
 
-
 <br>
 
-<h3 align="center">Things i've built ✦</h3>
+<h3 align="center">a little about me ✦</h3>
 
 <p align="center">
-  <a href="https://github.com/vaish13uh/MIRA">⛏️ MIRA</a>
-  &nbsp; • &nbsp;
-  <a href="https://github.com/vaish13uh/AutoHedger">🤖 AutoHedger</a>
-  &nbsp; • &nbsp;
-  <a href="https://github.com/vaish13uh/sentiment-analysis">💭 Sentiment Analysis</a>
+  building with <b>Python</b>, <b>AI/ML</b> & <b>SQL</b><br>
+  currently learning, experimenting & turning random ideas into projects ♡
 </p>
+<br>
 
 <p align="center">
-  <i>a few things i've built, broken, fixed & learned from ♡</i>
+  <code>Python</code>
+  <code>AI / ML</code>
+  <code>SQL</code>
+  <code>Backend</code>
+  <code>Git</code>
 </p>
+
 
 </div>
