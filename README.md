@@ -64,8 +64,6 @@
 
 <h3>github lately ✦</h3>
 
-<h3>github lately ✦</h3>
-
 <p>
   learning in public, pushing projects & slowly making this little corner of the internet mine ♡
 </p>
