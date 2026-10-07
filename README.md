@@ -4,7 +4,7 @@
 
 <br><br>
 
-<h3 align="center">Things i've built ✦</h3>
+
 <br>
 
 <h3 align="center">Things i've built ✦</h3>
