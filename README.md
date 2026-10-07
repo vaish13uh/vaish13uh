@@ -4,10 +4,10 @@
 
 <br><br>
 
-<h3 align="center">things i've built ✦</h3>
+<h3 align="center">Things i've built ✦</h3>
 <br>
 
-<h3 align="center">things i've built ✦</h3>
+<h3 align="center">Things i've built ✦</h3>
 
 <p align="center">
   <a href="https://github.com/vaish13uh/MIRA">⛏️ MIRA</a>
